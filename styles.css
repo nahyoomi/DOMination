@@ -1,0 +1,253 @@
+.main {
+    min-height: 100vh;
+    padding: 1.5rem;
+    background-color: hsl(198, 78%, 86%);
+}
+
+.main-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0d0c0c;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    max-width: 72rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .main-container {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+
+.container-create{
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-top: 4px solid #ec4899;
+}
+
+.container-create-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #db2777;
+}
+
+.container-create-button {
+    width: 9rem;
+    padding:1rem 1rem;
+    background-color: #ec4899;
+    color: white;
+    border:none;
+    border-radius: 0.375rem;
+}
+.container-create-button:hover {
+    cursor: pointer;
+    background-color: #db2777; 
+}
+
+.container-create-new {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    min-height: 100px;
+}
+
+.container-insert {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-top: 4px solid #3b82f6;
+}
+
+.container-insert-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2563eb;
+}
+
+.container-insert-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.insert-actions-btn {
+    width: 9rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    padding: 1rem 1rem;
+}
+
+.insert-actions-btn:hover {
+    cursor: pointer;
+    background-color: #2563eb; 
+}
+
+.transition-colors {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container-insert-new {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    min-height: 150px;
+}
+
+.container-insert-new p {
+    background-color: #fef08a;
+    border-left: 4px solid #f59e0b;
+    padding-left: 0.5rem;
+    padding: 0.75rem;               
+    margin-top: 0.5rem;             
+    margin-bottom: 0.5rem;           
+    background-color: #f9fafb;      
+    border-left: 4px solid #d1d5db;  
+    border-radius: 0.375rem;        
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); 
+    transition: all 0.2s ease-in-out; 
+    animation: fadeIn 0.3s ease-in-out; 
+}
+
+.container-delete {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-top: 4px solid #f87171;
+}
+
+.container-delete-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ef4444;
+}
+
+.container-delete-btn {
+    width: 10rem;
+    padding:1rem 1rem ;
+    background-color: #f87171;
+    color: white;
+    border:none;
+    border-radius: 0.375rem;
+    cursor: pointer;   
+}
+
+.container-delete-btn:hover {
+    cursor: pointer;
+    background-color: #ef4444; 
+}
+
+.container-delete-elements {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    min-height: 150px;
+}
+
+.container-delete-elements p {
+    padding-left: 0.5rem;
+    padding: 0.75rem;               
+    margin-top: 0.5rem;             
+    margin-bottom: 0.5rem;           
+    background-color: #f9fafb;      
+    border-left: 4px solid #d1d5db;  
+    border-radius: 0.375rem;        
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); 
+    transition: all 0.2s ease-in-out; 
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.container-replace {
+    background-color: #ffffff;   
+    border-radius: 0.5rem;        
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 1.5rem;              
+    border-top: 4px solid #48bb78;
+}
+
+.container-replace-title {
+    font-size: 1.25rem;           
+    line-height: 1.75rem;         
+    font-weight: 600;             
+    margin-bottom: 1rem;          
+    color: #34d399;               
+}
+
+.container-replace-btn {
+    width: 10rem;                 
+    padding:1rem 1rem ;           
+    background-color: #48bb78;    
+    color: white;                 
+    border:none;                  
+    border-radius: 0.375rem; 
+    cursor: pointer;     
+}
+
+.container-replace-btn:hover {
+    cursor: pointer;
+    background-color: #34d399; 
+}
+
+.container-replace-new {
+    margin-top: 1rem;             
+    padding: 1rem;                
+    border: 1px solid #e5e7eb;    
+    border-radius: 0.375rem;      
+    min-height: 150px;            
+}
+
+.container-replace-new p {
+    padding-left: 0.5rem;         
+    padding: 0.75rem;             
+    margin-top: 0.5rem;           
+    margin-bottom: 0.5rem;        
+    background-color: #f9fafb;    
+    border-left: 4px solid #d1d5db; 
+    border-radius: 0.375rem;      
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); 
+    transition: all 0.2s ease-in-out; 
+    animation: fadeIn 0.3s ease-in-out; 
+}
+
+.container-instructions {
+    margin-top: 2rem;               
+    padding: 1rem;                  
+    background-color: #ffffff;      
+    border-radius: 0.5rem;          
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    max-width: 72rem;              
+    margin-left: auto;          
+    margin-right: auto;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
